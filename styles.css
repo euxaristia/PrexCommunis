@@ -42,6 +42,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 header {
@@ -119,6 +120,8 @@ main {
     border-radius: 4px;
     box-shadow: 0 2px 8px var(--shadow);
     margin-bottom: 40px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .section {
@@ -145,6 +148,8 @@ main {
 .prayer-text {
     margin: 20px 0;
     line-height: 1.9;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .versicle {
@@ -179,6 +184,8 @@ main {
     margin: 8px 0;
     padding-left: 30px;
     text-indent: -30px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .verse-number {
