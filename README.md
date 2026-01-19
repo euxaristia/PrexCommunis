@@ -1,7 +1,5 @@
 # Prex Communis
 
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-
 A web-based Common Prayer application for the Daily Office, based on the Book of Common Prayer.
 
 ## Features
@@ -70,10 +68,6 @@ To deploy on GitHub Pages:
 ## Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests.
-
-## License
-
-This project is licensed under the BSD 3-Clause License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
