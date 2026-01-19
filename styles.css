@@ -171,7 +171,6 @@ main {
 
 .psalm {
     margin: 25px 0;
-    padding-left: 10px;
 }
 
 .psalm-title {
@@ -183,7 +182,7 @@ main {
 
 .psalm-verse {
     margin: 8px 0;
-    padding-left: 40px;
+    padding-left: 30px;
     text-indent: -30px;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -341,12 +340,8 @@ body.dark-mode .moon-icon {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .psalm {
-        padding-left: 5px;
-    }
-
     .psalm-verse {
-        padding-left: 30px;
+        padding-left: 20px;
         text-indent: -20px;
     }
 
