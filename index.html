@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+  <link rel="apple-touch-icon" href="./icon.svg" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Common Prayer - The Daily Office" />
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Common Prayer" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Roboto:wght@400;500&display=block"
+    rel="stylesheet" />
+
+  <style>
+    /* Critical CSS to prevent FOUC / Light Flash */
+    :root {
+      --primary-bg: #e6dfcf;
+      /* Light mode default */
+    }
+
+    .dark-mode {
+      --primary-bg: #1a1a1a;
+      /* Dark mode override */
+    }
+
+    body {
+      background-color: var(--primary-bg);
+      margin: 0;
+      /* Ensure no white edges */
+    }
+  </style>
+
+  <script>
+    (function () {
+      try {
+        const storedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+          document.documentElement.classList.add('dark-mode');
+        }
+      } catch (e) { }
+    })();
+  </script>
+  <title>Common Prayer</title>
+  <script type="module" crossorigin src="./assets/index-BNMwyEKZ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BJPLR9nw.css">
+<link rel="manifest" href="./manifest.webmanifest"></head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
